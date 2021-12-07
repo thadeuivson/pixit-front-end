@@ -39,6 +39,10 @@ export class UsuarioComponent implements OnInit {
     this.save();
   }
 
+  logout(){
+    window.localStorage.removeItem('token');
+  }
+
   private save(): void {
     console.log(this.user);
     this.newUserService.salvarUser(this.user).subscribe(
