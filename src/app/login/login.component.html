@@ -1,0 +1,13 @@
+
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Acesso ao Sistema</h5>
+    <label for="login" class="form-label">Usuário</label>
+    <input type="text" [(ngModel)]="login.user_nome" class="form-control" id="login" required>
+    <br>
+    <label for="senha" class="form-label">Senha</label>
+    <input type="password" [(ngModel)]="login.user_senha" class="form-control" id="senha" required>
+    <br>
+    <a (click)="onSubmit()" class="btn btn-primary">Entrar</a>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-lg" id="viewlet-above-content">
+    <div class="alert alert-primary" role="alert">
+        Pixit - Lista de usuários
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let usu of usuarios">
+                <td>{{ usu.user_id }}</td>
+                <td>{{ usu.user_nome }}</td>
+                <td><button (click)="delete(usu.user_id)" type="button" class="btn btn-danger">Excluir</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
